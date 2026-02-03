@@ -1,0 +1,48 @@
+name: praxis
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Core Architecture
+  flutter_riverpod: ^2.5.0 # State Management
+  go_router: ^13.0.0 # Routing
+  
+  # Backend & AI
+  supabase_flutter: ^2.5.0
+  google_generative_ai: ^0.4.0
+  
+  # UI & Formatting
+  google_fonts: ^6.2.0
+  flutter_markdown: ^0.7.1 # For rendering AI briefings
+  intl: ^0.19.0 # For Date/Time logic
+  
+  # Utilities
+  uuid: ^4.0.0
+  logger: ^2.0.0
+
+  cupertino_icons: ^1.0.2
+  flutter_dotenv: ^6.0.0
+  pdf: ^3.11.3
+  printing: ^5.14.2
+  record: ^6.2.0
+  path_provider: ^2.1.5
+  permission_handler: ^12.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - .env
+    - assets/textures/
+    - assets/images/
